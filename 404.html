@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting…</title>
+  <script>
+    // Any sub-path on burnaylabs.pt → same path on theburnaylabs.pt
+    window.location.replace("https://theburnaylabs.pt" + window.location.pathname + window.location.search + window.location.hash);
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a id="link" href="https://theburnaylabs.pt">theburnaylabs.pt</a>…</p>
+  <script>
+    document.getElementById("link").href = "https://theburnaylabs.pt" + window.location.pathname;
+    document.getElementById("link").textContent = "theburnaylabs.pt" + window.location.pathname;
+  </script>
+</body>
+</html>
