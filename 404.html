@@ -1,18 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Redirecting…</title>
-  <script>
-    // Any sub-path on theburnaylabs.pt → same path on burnaylabs.pt
-    window.location.replace("https://burnaylabs.pt" + window.location.pathname + window.location.search + window.location.hash);
-  </script>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Bytarc Labs</title>
+<script>
+  // Old Burnay Labs addresses: keep the path, rename the education project, then go to the matching Bytarc domain.
+  (function () {
+    var path = location.pathname.replace(/^\/burnaylabs-site(\/|$)/, "/bytarclabs-site$1");
+    location.replace("https://bytarc.pt" + path + location.search + location.hash);
+  })();
+</script>
+<meta http-equiv="refresh" content="0; url=https://bytarc.pt/">
+<link rel="canonical" href="https://bytarc.pt/">
 </head>
 <body>
-  <p>Redirecting to <a id="link" href="https://burnaylabs.pt">burnaylabs.pt</a>…</p>
-  <script>
-    document.getElementById("link").href = "https://burnaylabs.pt" + window.location.pathname;
-    document.getElementById("link").textContent = "burnaylabs.pt" + window.location.pathname;
-  </script>
+<p>Este site mudou para <a href="https://bytarc.pt/">bytarc.pt</a>.</p>
 </body>
 </html>
