@@ -1,3 +1,3 @@
 # burnaylabs-redirect
 
-Sends every theburnaylabs.pt address to the same path on bytarc.pt (Burnay Labs is now Bytarc Labs).
+Sends every burnaylabs.pt address to the same path on Bytarc Labs (Burnay Labs is now Bytarc Labs).
